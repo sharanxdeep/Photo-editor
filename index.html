@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Editor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+    <h1>Photo Editor</h1>
+    <main>
+      <div class="left">
+        <div class="btns">
+          <label for="img-inp" class="inp-btn">
+            Choose Image
+            <input type="file" id="img-inp" accept="image/*" hidden />
+          </label>
+          <button class="dwn-btn">Download</button>
+          <button class="rst-btn">Reset</button>
+        </div>
+        <div class="image">
+          <i class="ri-image-fill"></i>
+          <span class="img-text">No image selected</span>
+        </div>
+      </div>
+      <div class="right">
+        <h3>Filters</h3>
+        <p>Brightness</p>
+        <input type="range" name="brightness" value="100" min="0" max="200">
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

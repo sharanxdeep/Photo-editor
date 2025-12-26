@@ -1,0 +1,136 @@
+body{
+    background-color: var(--bg-primary-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--bg-border-color);
+}
+h1{
+    margin:15px;
+}
+
+
+
+main{
+    height: 750px;
+    width: 1200px;
+    border: 1px solid var(--bg-border-color);
+    border-radius: 15px;
+    display: flex;
+    /* position: fixed; */
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    height: 722px;
+    width: 780px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+.right{
+    height: 720px;
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid var(--bg-border-color);
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    padding: 10px;
+    margin: 0px;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width:750px;
+    border: 1px solid var(--bg-border-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.image{
+    width: 750px;
+    border: 1px solid var(--bg-border-color);
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    color: aliceblue;
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:100px;
+    flex-direction: column;
+
+}
+
+.img-text{
+    font-size: large;
+}
+
+.inp-btn,
+.dwn-btn,
+.rst-btn{
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0px;
+    width: 100px;
+    text-align: center;
+}
+
+.inp-btn:hover,
+.dwn-btn:hover,
+.rst-btn:hover{
+    opacity: 70%;
+}
+
+.inp-btn{
+    background: rgb(140, 140, 140);
+    color: white;
+    font-size: small;
+}
+
+.dwn-btn{
+    background: rgb(30, 170, 23);
+    color: rgb(230, 230, 230);
+    font-size: small;
+}
+
+.rst-btn{
+    background: red;
+    color: rgb(231, 231, 231);
+    
+}
+
+p{
+    margin: 0;
+}
+
+main .right input{
+    width: 350px;
+}
