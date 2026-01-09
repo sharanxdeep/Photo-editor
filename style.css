@@ -2,7 +2,6 @@ body{
     background-color: var(--bg-primary-color);
     display: flex;
     justify-content: center;
-    padding-top: 25px;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -13,7 +12,6 @@ body{
 h1{
     margin:15px;
 }
-
 
 
 main{
@@ -51,6 +49,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
 }
 
 h3{
@@ -71,7 +70,7 @@ h3{
     padding-right: 100px;
 }
 
-.image{
+.image-placeholder{
     width: 750px;
     border: 1px solid var(--bg-border-color);
     border-radius: 10px;
@@ -110,7 +109,7 @@ h3{
 }
 
 .inp-btn{
-    background: rgb(140, 140, 140);
+    background: var(--bg-button-color);
     color: white;
     font-size: small;
 }
@@ -129,8 +128,41 @@ h3{
 
 p{
     margin: 0;
+    margin-bottom: -4px;
 }
 
 main .right input{
     width: 350px;
+    appearance: none;
+}
+
+main .right input::-webkit-slider-thumb{
+    appearance: none;
+    cursor: pointer;
+    background-color: rgb(140, 173, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -9px;
+}
+
+main .right input::-webkit-slider-runnable-track{
+    height: 2px;
+    background-color: rgb(140, 140, 140);
+}
+
+.imgCanvas{
+    /* height:200px;
+    width:200px; */
+    /* background-color: rgba(240, 248, 255, 0.555); */
+    display: none;
+    max-width: 90%;
+    max-height: 60vh;
+}
+.plc{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
